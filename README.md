@@ -1,6 +1,6 @@
 # smartmeter-p1-v1
 Readout of a Flemish smartmeter via the P1 port and publish it to MQTT.
-The readut uses the DSMR v5 protocol, so probably Dutch meters can be read out.
+The meter uses the DSMR v5 protocol, so probably recent Dutch meters can be read out.
 
 ## Software
 
