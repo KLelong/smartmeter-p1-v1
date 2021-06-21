@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Slimme-meter"
 Date ""
 Rev ""
-Comp ""
+Comp "Koenraad Lelong"
 Comment1 ""
 Comment2 ""
 Comment3 ""
