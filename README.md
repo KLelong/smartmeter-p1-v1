@@ -10,7 +10,7 @@ The software is based on https://github.com/neographikal/P1-Meter-ESP8266-MQTT a
 
 ## Hardware
 
-I made a motherboard containing a Wemos D1 mini R2 and the hardware to connect tot the P1 port of the energy-meter. Later I swapped the mini R2 with a mini Pro, because the poor WiFi signal at my meter. So both can be used.
+I made a motherboard containing a Wemos D1 mini R2 and the hardware to connect to the P1 port of the energy-meter. Later I swapped the mini R2 with a mini Pro, because the poor WiFi signal at my meter. So both can be used.
 
 ## Risk
 
