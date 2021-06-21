@@ -165,7 +165,6 @@ void handleData() {
         message.concat(mqtt_topic);
         message.concat(" Delay=");
         message.concat(PublishDelay);
-        message.concat(" OTApass=NoneNone");
         message.concat(" www-user=");
         message.concat(www_username);
         message.concat(" www-pass=NoneNone");
@@ -206,9 +205,6 @@ void handleData() {
             DEBUG_LOG("|\n");
             DEBUG_LOG("Delay:") ;
             DEBUG_LOG(EEPROMreadString(DELAY_ADDR,DELAY_LEN));
-            DEBUG_LOG("|\n");
-            DEBUG_LOG("OTApass:") ;
-            DEBUG_LOG(EEPROMreadString(OTAPASS_ADDR,OTAPASS_LEN));
             DEBUG_LOG("|\n");
             message="defaults accepted";
             message.toCharArray(output,256);
@@ -280,13 +276,6 @@ void handleData() {
             if (httpserver.argName(i)=="Delay") {
               EEPROMwriteString(DELAY_ADDR,httpserver.arg(i),DELAY_LEN);
               DEBUG_LOG("saved\n");
-            }
-            else
-            if (httpserver.argName(i)=="OTApass") {
-              if (!(httpserver.arg(i)=="NoneNone")) {
-                EEPROMwriteString(OTAPASS_ADDR,httpserver.arg(i),OTAPASS_LEN);
-                DEBUG_LOG("saved\n");
-              }
             }
             else
             if (httpserver.argName(i)=="www-pass") {
