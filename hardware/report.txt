@@ -1,0 +1,9 @@
+Plot file "/home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/slimme-meter/Gerber/slimme-meter-tra-F_Cu.gbr" created.
+Plot file "/home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/slimme-meter/Gerber/slimme-meter-tra-B_Cu.gbr" created.
+Plot file "/home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/slimme-meter/Gerber/slimme-meter-tra-F_Paste.gbr" created.
+Plot file "/home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/slimme-meter/Gerber/slimme-meter-tra-F_SilkS.gbr" created.
+Plot file "/home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/slimme-meter/Gerber/slimme-meter-tra-B_SilkS.gbr" created.
+Plot file "/home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/slimme-meter/Gerber/slimme-meter-tra-F_Mask.gbr" created.
+Plot file "/home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/slimme-meter/Gerber/slimme-meter-tra-B_Mask.gbr" created.
+Plot file "/home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/slimme-meter/Gerber/slimme-meter-tra-Edge_Cuts.gbr" created.
+Create Gerber job file "/home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/slimme-meter/Gerber/slimme-meter-tra-job.gbrjob"

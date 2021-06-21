@@ -1,0 +1,395 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5E79DBE3
+P 3650 2650
+F 0 "R1" H 3720 2696 50  0000 L CNN
+F 1 "10K" H 3720 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3580 2650 50  0001 C CNN
+F 3 "~" H 3650 2650 50  0001 C CNN
+	1    3650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E79E74C
+P 4100 2400
+F 0 "R2" H 4170 2446 50  0000 L CNN
+F 1 "10K" H 4170 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 2400 50  0001 C CNN
+F 3 "~" H 4100 2400 50  0001 C CNN
+	1    4100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2800 3650 2900
+Wire Wire Line
+	3650 2950 3800 2950
+Wire Wire Line
+	4100 2750 4100 2650
+Wire Wire Line
+	3650 2500 3650 2000
+Wire Wire Line
+	3650 2000 3850 2000
+Wire Wire Line
+	4100 2000 4100 2250
+Wire Wire Line
+	4100 3150 4100 3250
+$Comp
+L power:GND #PWR04
+U 1 1 5E79F18E
+P 4100 3300
+F 0 "#PWR04" H 4100 3050 50  0001 C CNN
+F 1 "GND" H 4105 3127 50  0000 C CNN
+F 2 "" H 4100 3300 50  0001 C CNN
+F 3 "" H 4100 3300 50  0001 C CNN
+	1    4100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5E79F693
+P 3850 1900
+F 0 "#PWR03" H 3850 1750 50  0001 C CNN
+F 1 "+3.3V" H 3865 2073 50  0000 C CNN
+F 2 "" H 3850 1900 50  0001 C CNN
+F 3 "" H 3850 1900 50  0001 C CNN
+	1    3850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1900 3850 2000
+Connection ~ 3850 2000
+Wire Wire Line
+	3850 2000 4100 2000
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5E7A0269
+P 1850 2700
+F 0 "J1" H 1958 3081 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 1958 2990 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Right" H 1850 2700 50  0001 C CNN
+F 3 "~" H 1850 2700 50  0001 C CNN
+	1    1850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5E7A0EE7
+P 2400 2000
+F 0 "#PWR01" H 2400 1850 50  0001 C CNN
+F 1 "+5V" H 2415 2173 50  0000 C CNN
+F 2 "" H 2400 2000 50  0001 C CNN
+F 3 "" H 2400 2000 50  0001 C CNN
+	1    2400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E7A17C4
+P 2450 3100
+F 0 "#PWR02" H 2450 2850 50  0001 C CNN
+F 1 "GND" H 2455 2927 50  0000 C CNN
+F 2 "" H 2450 3100 50  0001 C CNN
+F 3 "" H 2450 3100 50  0001 C CNN
+	1    2450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3000 2450 3100
+Wire Wire Line
+	2050 2500 2400 2500
+Wire Wire Line
+	2400 2500 2400 2050
+Wire Wire Line
+	2050 2900 3650 2900
+Connection ~ 3650 2900
+Wire Wire Line
+	3650 2900 3650 2950
+Wire Wire Line
+	2050 3000 2450 3000
+Wire Wire Line
+	2050 2700 2450 2700
+Wire Wire Line
+	2450 2700 2450 3000
+Connection ~ 2450 3000
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 5E7BE7F8
+P 5850 2950
+F 0 "U1" H 5850 2061 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 5850 1970 50  0000 C CNN
+F 2 "wemos-d1-mini3:wemos-mini-d1-SMT" H 5850 1800 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 4000 1800 50  0001 C CNN
+	1    5850 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2000 5750 2150
+Connection ~ 4100 2000
+Wire Wire Line
+	3150 2050 3150 1650
+Wire Wire Line
+	5950 1650 5950 2150
+Connection ~ 2400 2050
+Wire Wire Line
+	2400 2050 2400 2000
+Wire Wire Line
+	4100 2650 5100 2650
+Connection ~ 4100 2650
+Wire Wire Line
+	4100 2650 4100 2550
+Wire Wire Line
+	5100 2650 5100 1850
+Wire Wire Line
+	5100 1850 6650 1850
+Wire Wire Line
+	6650 1850 6650 2850
+Wire Wire Line
+	6650 2850 6250 2850
+Wire Wire Line
+	2050 2600 2400 2600
+Wire Wire Line
+	2400 2050 3150 2050
+Wire Wire Line
+	3150 1650 5950 1650
+Wire Wire Line
+	4100 2000 5750 2000
+Wire Wire Line
+	2400 2500 2400 2600
+Connection ~ 2400 2500
+$Comp
+L Transistor_BJT:BC847 Q1
+U 1 1 5EAB2551
+P 4000 2950
+F 0 "Q1" H 4191 2996 50  0000 L CNN
+F 1 "BC847" H 4191 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 2875 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 4000 2950 50  0001 L CNN
+	1    4000 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3750 5850 3850
+Wire Wire Line
+	5850 3850 4850 3850
+Wire Wire Line
+	4850 3850 4850 3250
+Wire Wire Line
+	4850 3250 4100 3250
+Connection ~ 4100 3250
+Wire Wire Line
+	4100 3250 4100 3300
+NoConn ~ 2050 2800
+$Comp
+L Connector:Conn_01x08_Female J2
+U 1 1 5EAC2B5B
+P 1600 4050
+F 0 "J2" H 1628 4026 50  0000 L CNN
+F 1 "Bottom" H 1628 3935 50  0000 L CNN
+F 2 "slimme-meter:bottom" H 1600 4050 50  0001 C CNN
+F 3 "~" H 1600 4050 50  0001 C CNN
+	1    1600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J3
+U 1 1 5EAC5DD4
+P 1600 5000
+F 0 "J3" H 1628 4976 50  0000 L CNN
+F 1 "Kort Z" H 1628 4885 50  0000 L CNN
+F 2 "slimme-meter:zij-kort" H 1600 5000 50  0001 C CNN
+F 3 "~" H 1600 5000 50  0001 C CNN
+	1    1600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J4
+U 1 1 5EAC68F2
+P 3100 5000
+F 0 "J4" H 3128 4976 50  0000 L CNN
+F 1 "Kort N" H 3128 4885 50  0000 L CNN
+F 2 "slimme-meter:zij-lang" H 3100 5000 50  0001 C CNN
+F 3 "~" H 3100 5000 50  0001 C CNN
+	1    3100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J5
+U 1 1 5EAC9601
+P 1600 5900
+F 0 "J5" H 1628 5876 50  0000 L CNN
+F 1 "Lang W" H 1628 5785 50  0000 L CNN
+F 2 "slimme-meter:zij-kort" H 1600 5900 50  0001 C CNN
+F 3 "~" H 1600 5900 50  0001 C CNN
+	1    1600 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J7
+U 1 1 5EAC960B
+P 3100 5900
+F 0 "J7" H 3128 5876 50  0000 L CNN
+F 1 "Lang O" H 3128 5785 50  0000 L CNN
+F 2 "slimme-meter:zij-lang" H 3100 5900 50  0001 C CNN
+F 3 "~" H 3100 5900 50  0001 C CNN
+	1    3100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J6
+U 1 1 5EACF6A3
+P 3100 4100
+F 0 "J6" H 3128 4076 50  0000 L CNN
+F 1 "Top" H 3128 3985 50  0000 L CNN
+F 2 "slimme-meter:top" H 3100 4100 50  0001 C CNN
+F 3 "~" H 3100 4100 50  0001 C CNN
+	1    3100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5EAD3C77
+P 1000 4350
+F 0 "#PWR0101" H 1000 4100 50  0001 C CNN
+F 1 "GND" H 1005 4177 50  0000 C CNN
+F 2 "" H 1000 4350 50  0001 C CNN
+F 3 "" H 1000 4350 50  0001 C CNN
+	1    1000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 4250 1000 4350
+Wire Wire Line
+	1000 4250 1400 4250
+Wire Wire Line
+	1100 4350 1100 3600
+Wire Wire Line
+	1100 3600 1300 3600
+Wire Wire Line
+	1100 4350 1400 4350
+Text Label 1200 3600 0    50   ~ 0
+Switch
+Text Label 5150 2850 2    50   ~ 0
+Switch
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 5EAD9C89
+P 2400 3900
+F 0 "SW1" H 2400 4225 50  0000 C CNN
+F 1 "SW_DPST" H 2400 4134 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Push_2P2T_Vertical_E-Switch_800UDP8P1A1M6" H 2400 3900 50  0001 C CNN
+F 3 "~" H 2400 3900 50  0001 C CNN
+	1    2400 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4300 2700 4300
+Wire Wire Line
+	2700 4300 2700 4000
+Wire Wire Line
+	2700 3800 2600 3800
+Wire Wire Line
+	2600 4000 2700 4000
+Connection ~ 2700 4000
+Wire Wire Line
+	2700 4000 2700 3800
+Wire Wire Line
+	2900 4400 2100 4400
+Wire Wire Line
+	2100 4400 2100 4000
+Wire Wire Line
+	2100 3800 2200 3800
+Wire Wire Line
+	2200 4000 2100 4000
+Connection ~ 2100 4000
+Wire Wire Line
+	2100 4000 2100 3800
+Wire Wire Line
+	1400 4900 1250 4900
+Wire Wire Line
+	1250 4900 1250 5400
+Wire Wire Line
+	1250 5400 1400 5400
+Wire Wire Line
+	2900 5700 2700 5700
+Wire Wire Line
+	2700 5700 2700 6000
+Wire Wire Line
+	2700 6000 2900 6000
+NoConn ~ 1400 4450
+NoConn ~ 1400 4150
+NoConn ~ 1400 4050
+NoConn ~ 1400 3950
+NoConn ~ 1400 3850
+NoConn ~ 1400 3750
+NoConn ~ 2900 3800
+NoConn ~ 2900 3900
+NoConn ~ 2900 4000
+NoConn ~ 2900 4100
+NoConn ~ 2900 4200
+NoConn ~ 2900 4700
+NoConn ~ 2900 4800
+NoConn ~ 2900 4900
+NoConn ~ 2900 5000
+NoConn ~ 2900 5100
+NoConn ~ 2900 5200
+NoConn ~ 2900 5300
+NoConn ~ 2900 5400
+NoConn ~ 1400 5300
+NoConn ~ 1400 5200
+NoConn ~ 1400 5100
+NoConn ~ 1400 5000
+NoConn ~ 1400 4800
+NoConn ~ 1400 4700
+NoConn ~ 2900 4500
+NoConn ~ 2900 6100
+NoConn ~ 2900 5800
+NoConn ~ 2900 5900
+NoConn ~ 2900 5600
+NoConn ~ 1400 5600
+NoConn ~ 1400 5700
+NoConn ~ 1400 5800
+NoConn ~ 1400 5900
+NoConn ~ 1400 6000
+NoConn ~ 1400 6100
+NoConn ~ 1400 6200
+NoConn ~ 1400 6300
+NoConn ~ 2900 6200
+NoConn ~ 2900 6300
+NoConn ~ 5450 2450
+NoConn ~ 5450 2550
+NoConn ~ 5450 2650
+NoConn ~ 6250 2550
+NoConn ~ 6250 2950
+NoConn ~ 5450 2950
+NoConn ~ 5450 3050
+NoConn ~ 5450 3150
+NoConn ~ 5450 3250
+NoConn ~ 5450 3350
+Wire Wire Line
+	5450 2750 5250 2750
+Wire Wire Line
+	5250 2750 5250 2850
+Wire Wire Line
+	5250 2850 5150 2850
+NoConn ~ 5450 2850
+Text Notes 6250 3350 0    50   ~ 0
+D4 : builtin LED\nD3 : GPIO0 -> bootmode
+Text Notes 2150 4150 0    50   ~ 0
+Factory reset
+$EndSCHEMATC

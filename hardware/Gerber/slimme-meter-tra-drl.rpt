@@ -1,0 +1,24 @@
+Drill report for /home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/slimme-meter/slimme-meter-tra.kicad_pcb
+Created on za 16 mei 2020 18:56:48 CEST
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'slimme-meter-tra-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  1,00mm  0,039"  (8 holes)
+
+    Total plated holes count 8
+
+
+Drill file 'slimme-meter-tra-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  1,50mm  0,059"  (1 hole)
+    T2  2,50mm  0,098"  (1 hole)
+
+    Total unplated holes count 2

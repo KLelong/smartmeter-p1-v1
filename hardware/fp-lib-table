@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name "misc conn")(type KiCad)(uri /home/koenraad/ownCloud/documents/Kicad/Kicad-lib/Ext-lib/mod_conn_misc)(options "")(descr ""))
+  (lib (name TSM-108)(type KiCad)(uri /home/koenraad/ownCloud/documents/devel/hardware/SlimmeMeter/Doc)(options "")(descr ""))
+  (lib (name slimme-meter)(type KiCad)(uri ${KIPRJMOD}/slimme-meter.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri /home/koenraad/Documenten)(options "")(descr ""))
+)
