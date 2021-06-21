@@ -6,6 +6,7 @@ The meter uses the DSMR v5 protocol, so probably recent Dutch meters can be read
 
 The software is intended to run on an ESP8266 device.
 This version is made with the Arduino IDE.
+The software is based on https://github.com/neographikal/P1-Meter-ESP8266-MQTT and others.
 
 ## Hardware
 
